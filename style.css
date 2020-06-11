@@ -1,0 +1,30 @@
+.container{
+    border-style: solid;
+}
+
+#info{
+    text-align: center;
+}
+
+/* #todaysinfo{
+    text-align: center;
+} */
+
+.hourarea{
+    border-style: solid;
+    background-color: gray;
+    justify-content: flex-end;
+    height: 90px;
+}
+
+#hourbtn{
+    text-align: end;
+
+
+}
+
+textarea {
+    resize: none;
+    text-decoration-color: lightgreen;
+    background-color: green;
+}
