@@ -39,7 +39,7 @@ function createHour(index){
   var currentHour = moment().format("HH");
   var color = "";
 
-  if((index + 9) === currentHour ){
+  if((index + 9) == currentHour ){
     color = "red";
 
   }else if ((index + 9) < currentHour ){
