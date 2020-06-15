@@ -108,9 +108,3 @@ function assignHour(index){
   return hour;
 }
 
-
-
-
-
-
-
