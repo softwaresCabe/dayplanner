@@ -1,22 +1,23 @@
 $(document).ready(function(){
-
+  //Get and display current date
   getDate();
 
+  //Create div for each hour and append to HTML
   createAllHours();
 
+  //On save button clicked
   $(".savebtn").on("click", saveBtnClicked );
 
 })
 
 
 function saveBtnClicked(){
-
+  // get values to store in local storage
   var scheduleText = $(this).siblings(".form-control").val();
   var scheduleTime = $(this).attr("hour");
 
-  //localStorage.setItem("hour", scheduleTime);
+  // set values
   localStorage.setItem(scheduleTime, scheduleText);
-
 }
 
 
@@ -29,32 +30,29 @@ function createAllHours(){
 
 function createHour(index){
   var hour;
-
   var container = $(".container");
+  var currentHour = moment().format("HH");
+  var color = "";
+  var storedData = "";
 
   //assign each hour of each hour block
   hour = assignHour(index, hour);
 
-  // assign a color to each div based on hour os the day
-  var currentHour = moment().format("HH");
-  var color = "";
-
+  // assign a color to each div based on hour of the day
   if((index + 9) == currentHour ){
     color = "red";
 
   }else if ((index + 9) < currentHour ){
     color = "lightgray";
+
   }else{
     color ="green";
   }
 
   //Get Local storage Data and assign text area
-  var storedData = "";
-
   if( localStorage.getItem(index + 9) != undefined ){
     storedData = localStorage.getItem(index + 9);
   }
-
 
   var divHTML = '<div hour="'+ (index + 9) +'" class="d-flex flex-row hourarea">' +
   '<div class ="col-1 time">' + hour + ' </div>'+
@@ -63,13 +61,6 @@ function createHour(index){
   '</div>';
 
   container.append(divHTML);
-
-  //Get Local storage Data and assign text area
-  var storedData;
-
-  if( localStorage.getItem(index + 9) != undefined ){
-    storedData = localStorage.getItem(index + 9);
-  }
 }
 
 
@@ -114,7 +105,6 @@ function assignHour(index){
     case 8:
       hour = "5:00pm";
   }
-
   return hour;
 }
 
