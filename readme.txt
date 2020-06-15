@@ -1,6 +1,6 @@
 A simple day planner web page were users can input tasks throughout every hour of their work day. Tasks can be saved to user's local storage so that users may return to their task later in the day. 
 
-I built this webpage to improve my skills in creating dynamic html elements and accesses those elements data based on user input using jQuery.  
+This webpage was built to improve my skills in creating dynamic html elements and accesses those elements data based on user input using jQuery.  
 
 Link: https://softwarescabe.github.io/dayplanner/ 
 
