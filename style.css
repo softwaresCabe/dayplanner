@@ -6,10 +6,6 @@
     text-align: center;
 }
 
-/* #todaysinfo{
-    text-align: center;
-} */
-
 .hourarea{
     border-style: solid;
     background-color: gray;
@@ -19,8 +15,6 @@
 
 #hourbtn{
     text-align: end;
-
-
 }
 
 textarea {
