@@ -28,5 +28,4 @@ WHEN I refresh the page
 THEN the saved events persist  
 
 Screen Shot
-
 ![1](https://user-images.githubusercontent.com/53986733/84609069-3825f700-ae6a-11ea-89a7-4e4c17a84310.JPG) 
